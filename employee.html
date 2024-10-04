@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.tailwindcss.com"></script>
 <title>Welcome to Sinks System</title>
+<style>
+    modal:target {
+        display: flex;
+    }
+</style>
 </head>
 <body class = "bg-[#4b4848] flex justify-center items-center min-h-screen">
     
@@ -20,188 +25,221 @@
             </tr>    
         </thead>
         <tbody class="text-[#ffffff] text-center">
-            <tr class="bg-[#797373] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300" onclick="location.href='https://google.com';">
+            <tr class="bg-[#797373] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
                 <td class="py-3 px-6">Ivan Petrov</td>
                 <td class="py-3 px-6">Software Engineer</td>
                 <td class="py-3 px-6">IT</td>
                 <td class="py-3 px-6">ivan.petrov@sinksrus.com</td>
-                <td class="py-3 px-6"><a href="index.html" class="text-white py-2 hover:bg-[#292626]">More</a></td>
+                <td class="py-3 px-6"><button class="btn" onclick="my_modal_1.showModal()">more</button></td>
                 
             </tr>
             <tr class="bg-[#5d5a5a] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
                 <td class="py-3 px-6">Pedro Los Baños</td>
                 <td class="py-3 px-6">Marketing Manager</td>
                 <td class="py-3 px-6">Marketing</td>
-                <td class="py-3 px-6">pedro_los_banos@sinksrus.com</td>
-                <td class="py-3 px-6"><a href="index.html" class="text-white py-2 hover:bg-[#292626]">More</a></td>
+                <td class="py-3 px-6">p_baños@sinksrus.com</td>
+                <td class="py-3 px-6"><button class="btn" onclick="my_modal_2.showModal()">more</button></td>
             </tr>
-            <tr class="bg-[#424040]  hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
+            <tr class="bg-[#424040]  hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300" onclick="location.href='#name3';">
                 <td class="py-3 px-6">Ana Gómez</td>
                 <td class="py-3 px-6">HR Specialist</td>
                 <td class="py-3 px-6">HR</td>
                 <td class="py-3 px-6">ana.gomez@sinksrus.com</td>
-                <td class="py-3 px-6"><a href="index.html" class="text-white py-2 hover:bg-[#292626]">More</a></td>
+                <td class="py-3 px-6"><button class="btn" onclick="my_modal_3.showModal()">more</button></td>
             </tr>
-            <tr class="bg-[#333232] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
+            <tr class="bg-[#333232] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300" onclick="location.href='#name4';">
                 <td class="py-3 px-6">John Wu</td>
                 <td class="py-3 px-6">Sales Associate</td>
                 <td class="py-3 px-6">Sales</td>
                 <td class="py-3 px-6">john.wu@sinksrus.com</td>
-                <td class="py-3 px-6"><a href="index.html" class="text-white py-2 hover:bg-[#292626]">More</a></td>
+                <td class="py-3 px-6"><button class="btn" onclick="my_modal_4.showModal()">more</button></td>
             </tr>
-            <tr class="bg-[#282727] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
+            <tr class="bg-[#282727] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300" onclick="location.href='#name5';">
                 <td class="py-3 px-6">Emma Wilson</td>
                 <td class="py-3 px-6">CEO</td>
                 <td class="py-3 px-6">Admin</td>
                 <td class="py-3 px-6">emma@sinksrus.com</td>
-                <td class="py-3 px-6"><a href="index.html" class="text-white py-2 hover:bg-[#292626]">More</a></td>
+                <td class="py-3 px-6"><button class="btn" onclick="my_modal_5.showModal()">more</button></td>
             </tr>
         </tbody>
     </table>
-    <div id="#name1" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-        <div class="bg-white rounded-lg p-6"></div>
-            <h2 class="text-lg font-semibold">Modal Title</h2>
-            <thead class="text-white"> 
-                <tr>
-                    <th class="py-3 bg-[#b0b0b0]">Name</th>
-                    <th class="py-3 bg-[#b0b0b0]">Job Title</th>
-                    <th class="py-3 bg-[#b0b0b0]">Department</th>
-                    <th class="py-3 bg-[#b0b0b0]">Email</th>
-                    <th class="py-3 bg-[#b0b0b0]">Contact</th>
-                    <th class="py-3 bg-[#b0b0b0]">Address</th>
-                    <th class="py-3 bg-[#b0b0b0]">Sex</th>
-                    <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
-                    
-                </tr>    
-            </thead>
-            <tr class="bg-[#797373] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300" onclick="location.href='https://google.com';">
-                <td class="py-3 px-6">Ivan Petrov</td>
-                <td class="py-3 px-6">Software Engineer</td>
-                <td class="py-3 px-6">IT</td>
-                <td class="py-3 px-6">ivan.petrov@sinksrus.com</td>
-                <td class="py-3 px-6">555-6789</td>
-                <td class="py-3 px-6">12 Red Square, Moscow</td>
-                <td class="py-3 px-6">Male</td>
-                <td class="py-3 px-6">Single</td>
+    <dialog id="my_modal_1" class="shadow-2xl border-2 bg-[#8b8585] w-7/12 overflow-shidden">
+        <div class="modal-box">
+            <table>
+                <thead class="text-white"> 
+                    <tr>
+                        <th class="py-3 bg-[#b0b0b0]">Name</th>
+                        <th class="py-3 bg-[#b0b0b0]">Job Title</th>
+                        <th class="py-3 bg-[#b0b0b0]">Department</th>
+                        <th class="py-3 bg-[#b0b0b0]">Email</th>
+                        <th class="py-3 bg-[#b0b0b0]">Contact</th>
+                        <th class="py-3 bg-[#b0b0b0]">Address</th>
+                        <th class="py-3 bg-[#b0b0b0]">Sex</th>
+                        <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
+                    </tr>    
+                </thead>
+                <tbody class="text-[#ffffff] text-center">
+                    <tr class="bg-[#797373] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
+                        <td class="py-3 px-6">Ivan Petrov</td>
+                        <td class="py-3 px-6">Software Engineer</td>
+                        <td class="py-3 px-6">IT</td>
+                        <td class="py-3 px-6">ivan.petrov@sinksrus.com</td>
+                        <td class="py-3 px-6">555-6789</td>
+                        <td class="py-3 px-6">12 Red Square, Moscow</td>
+                        <td class="py-3 px-6">Male</td>
+                        <td class="py-3 px-6">Single</td>
+                    </tr>
+                </tbody>
 
-                
-            </tr>
-            <a href="#" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Close</a>
-    </div>
-    <div id="#name2" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-        <div class="bg-white rounded-lg p-6"></div>
-            <h2 class="text-lg font-semibold">Modal Title</h2>
-            <thead class="text-white"> 
-                <tr>
-                    <th class="py-3 bg-[#b0b0b0]">Name</th>
-                    <th class="py-3 bg-[#b0b0b0]">Job Title</th>
-                    <th class="py-3 bg-[#b0b0b0]">Department</th>
-                    <th class="py-3 bg-[#b0b0b0]">Email</th>
-                    <th class="py-3 bg-[#b0b0b0]">Contact</th>
-                    <th class="py-3 bg-[#b0b0b0]">Address</th>
-                    <th class="py-3 bg-[#b0b0b0]">Sex</th>
-                    <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
-                    
-                </tr>    
-            </thead>
-            <tr class="bg-[#797373] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300" onclick="location.href='https://google.com';">
-                <td class="py-3 px-6">Pedro Los Baños</td>
-                <td class="py-3 px-6">Marketing Manager</td>
-                <td class="py-3 px-6">Marketing</td>
-                <td class="py-3 px-6">pedro_los_banos@sinksrus.com</td>
-                <td class="py-3 px-6">n/a</td>
-                <td class="py-3 px-6">123 Mabini Street</td>
-                <td class="py-3 px-6">Male</td>
-                <td class="py-3 px-6">Married</td>
+            </table>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="my_modal_2" class="shadow-2xl border-2 bg-[#8b8585] w-7/12 overflow-hidden">
+        <div class="modal-box">
+            <table>
+                <thead class="text-white"> 
+                    <tr>
+                        <th class="py-3 bg-[#b0b0b0]">Name</th>
+                        <th class="py-3 bg-[#b0b0b0]">Job Title</th>
+                        <th class="py-3 bg-[#b0b0b0]">Department</th>
+                        <th class="py-3 bg-[#b0b0b0]">Email</th>
+                        <th class="py-3 bg-[#b0b0b0]">Contact</th>
+                        <th class="py-3 bg-[#b0b0b0]">Address</th>
+                        <th class="py-3 bg-[#b0b0b0]">Sex</th>
+                        <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
+                    </tr>    
+                </thead>
+                <tbody class="text-[#ffffff] text-center">
+                        <tr class="bg-[#797373] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
+                        <td class="py-3 px-6">Pedro Los Baños</td>
+                        <td class="py-3 px-6">Marketing Manager</td>
+                        <td class="py-3 px-6">Marketing</td>
+                        <td class="py-3 px-6">p_baños@sinksrus.com</td>
+                        <td class="py-3 px-6">n/a</td>
+                        <td class="py-3 px-6">123 Mabini Street</td>
+                        <td class="py-3 px-6">Male</td>
+                        <td class="py-3 px-6">Married</td>  
+                    </tr>
+                </tbody>
+            </table>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+    </dialog>
+      <dialog id="my_modal_3" class="shadow-2xl border-2 bg-[#8b8585] w-7/12 overflow-hidden">
+        <div class="modal-box">
+            <table>
+                <thead class="text-white"> 
+                    <tr>
+                        <th class="py-3 bg-[#b0b0b0]">Name</th>
+                        <th class="py-3 bg-[#b0b0b0]">Job Title</th>
+                        <th class="py-3 bg-[#b0b0b0]">Department</th>
+                        <th class="py-3 bg-[#b0b0b0]">Email</th>
+                        <th class="py-3 bg-[#b0b0b0]">Contact</th>
+                        <th class="py-3 bg-[#b0b0b0]">Address</th>
+                        <th class="py-3 bg-[#b0b0b0]">Sex</th>
+                        <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
+                    </tr>    
+                </thead>
+                <tbody class="text-[#ffffff] text-center">
+                    <tr class="bg-[#797373] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
+                        <td class="py-3 px-6">Ana Gómez</td>
+                        <td class="py-3 px-6">HR Specialist</td>
+                        <td class="py-3 px-6">HR</td>
+                        <td class="py-3 px-6">ana.gomez@sinksrus.com</td>
+                        <td class="py-3 px-6">555-1526</td>
+                        <td class="py-3 px-6">n/a</td>
+                        <td class="py-3 px-6">Female</td>
+                        <td class="py-3 px-6">Divorced</td>
+                    </tr>
+                </tbody>
+            </table>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <dialog id="my_modal_4" class="shadow-2xl border-2 bg-[#8b8585] w-7/12 overflow-hidden">
+        <div class="modal-box">
+            <table>
+                <thead class="text-white"> 
+                    <tr>
+                        <th class="py-3 bg-[#b0b0b0]">Name</th>
+                        <th class="py-3 bg-[#b0b0b0]">Job Title</th>
+                        <th class="py-3 bg-[#b0b0b0]">Department</th>
+                        <th class="py-3 bg-[#b0b0b0]">Email</th>
+                        <th class="py-3 bg-[#b0b0b0]">Contact</th>
+                        <th class="py-3 bg-[#b0b0b0]">Address</th>
+                        <th class="py-3 bg-[#b0b0b0]">Sex</th>
+                        <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
+                    </tr>    
+                </thead>
+                <tbody class="text-[#ffffff] text-center">
+                    <tr class="bg-[#797373] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
+                        <td class="py-3 px-6">John Wu</td>
+                        <td class="py-3 px-6">Sales Associate</td>
+                        <td class="py-3 px-6">Sales</td>
+                        <td class="py-3 px-6">john.wu@sinksrus.com</td>
+                        <td class="py-3 px-6">555-6925</td>
+                        <td class="py-3 px-6">456 Rizal Street</td>
+                        <td class="py-3 px-6">Male</td>
+                        <td class="py-3 px-6">Single</td>
+                    </tr>
+                </tbody>
 
-                
-            </tr>
-            <a href="#" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Close</a>
-    </div>
-    <div id="#name3" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-        <div class="bg-white rounded-lg p-6"></div>
-            <h2 class="text-lg font-semibold">Modal Title</h2>
-            <thead class="text-white"> 
-                <tr>
-                    <th class="py-3 bg-[#b0b0b0]">Name</th>
-                    <th class="py-3 bg-[#b0b0b0]">Job Title</th>
-                    <th class="py-3 bg-[#b0b0b0]">Department</th>
-                    <th class="py-3 bg-[#b0b0b0]">Email</th>
-                    <th class="py-3 bg-[#b0b0b0]">Contact</th>
-                    <th class="py-3 bg-[#b0b0b0]">Address</th>
-                    <th class="py-3 bg-[#b0b0b0]">Sex</th>
-                    <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
-                    
-                </tr>    
-            </thead>
-            <tr class="bg-[#424040]  hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300"></tr>
-                <td class="py-3 px-6">Ana Gómez</td>
-                <td class="py-3 px-6">HR Specialist</td>
-                <td class="py-3 px-6">HR</td>
-                <td class="py-3 px-6">ana.gomez@sinksrus.com</td>
-                <td class="py-3 px-6">555-1526</td>
-                <td class="py-3 px-6">n/a</td>
-                <td class="py-3 px-6">Female</td>
-                <td class="py-3 px-6">Divorced</td>
-                
-            </tr>
-            <a href="#" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Close</a>
-    </div>
-    <div id="#name4" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-        <div class="bg-white rounded-lg p-6"></div>
-            <h2 class="text-lg font-semibold">Modal Title</h2>
-            <thead class="text-white"> 
-                <tr>
-                    <th class="py-3 bg-[#b0b0b0]">Name</th>
-                    <th class="py-3 bg-[#b0b0b0]">Job Title</th>
-                    <th class="py-3 bg-[#b0b0b0]">Department</th>
-                    <th class="py-3 bg-[#b0b0b0]">Email</th>
-                    <th class="py-3 bg-[#b0b0b0]">Contact</th>
-                    <th class="py-3 bg-[#b0b0b0]">Address</th>
-                    <th class="py-3 bg-[#b0b0b0]">Sex</th>
-                    <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
-                    
-                </tr>    
-            </thead>
-            <tr class="bg-[#333232] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
-                <td class="py-3 px-6">John Wu</td>
-                <td class="py-3 px-6">Sales Associate</td>
-                <td class="py-3 px-6">Sales</td>
-                <td class="py-3 px-6">john.wu@sinksrus.com</td>
-                <td class="py-3 px-6">555-6925</td>
-                <td class="py-3 px-6">456 Rizal Street</td>
-                <td class="py-3 px-6">Male</td>
-                <td class="py-3 px-6">Single</td>
-            </tr>
-            <a href="#" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Close</a>
-    </div>
-    <div id="#name5" class="fixed inset-0 flex items-center justify-center hidden bg-gray-800 bg-opacity-50">
-        <div class="bg-white rounded-lg p-6"></div>
-            <h2 class="text-lg font-semibold">Modal Title</h2>
-            <thead class="text-white"> 
-                <tr>
-                    <th class="py-3 bg-[#b0b0b0]">Name</th>
-                    <th class="py-3 bg-[#b0b0b0]">Job Title</th>
-                    <th class="py-3 bg-[#b0b0b0]">Department</th>
-                    <th class="py-3 bg-[#b0b0b0]">Email</th>
-                    <th class="py-3 bg-[#b0b0b0]">Contact</th>
-                    <th class="py-3 bg-[#b0b0b0]">Address</th>
-                    <th class="py-3 bg-[#b0b0b0]">Sex</th>
-                    <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
-                    
-                </tr>    
-            </thead>
-            <tr class="bg-[#282727] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
-                <td class="py-3 px-6">Emma Wilson</td>
-                <td class="py-3 px-6">CEO</td>
-                <td class="py-3 px-6">Admin</td>
-                <td class="py-3 px-6">emma@sinksrus.com</td>
-                <td class="py-3 px-6">555-1111</td>
-                <td class="py-3 px-6">n/a</td>
-                <td class="py-3 px-6">Female</td>
-                <td class="py-3 px-6">Married</td>
-            </tr>
-            <a href="#" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Close</a>
-    </div>
+            </table>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <dialog id="my_modal_5" class="shadow-2xl border-2 bg-[#8b8585] w-7/12 overflow-hidden">
+        <div class="modal-box">
+            <table>
+                <thead class="text-white"> 
+                    <tr>
+                        <th class="py-3 bg-[#b0b0b0]">Name</th>
+                        <th class="py-3 bg-[#b0b0b0]">Job Title</th>
+                        <th class="py-3 bg-[#b0b0b0]">Department</th>
+                        <th class="py-3 bg-[#b0b0b0]">Email</th>
+                        <th class="py-3 bg-[#b0b0b0]">Contact</th>
+                        <th class="py-3 bg-[#b0b0b0]">Address</th>
+                        <th class="py-3 bg-[#b0b0b0]">Sex</th>
+                        <th class="py-3 bg-[#b0b0b0]">Marital Status</th>
+                    </tr>    
+                </thead>
+                <tbody class="text-[#ffffff] text-center">
+                    <tr class="bg-[#797373] hover:bg-[#aaa2a2] hover:scale-105 cursor-pointer duration-300">
+                        <td class="py-3 px-6">Emma Wilson</td>
+                        <td class="py-3 px-6">CEO</td>
+                        <td class="py-3 px-6">Admin</td>
+                        <td class="py-3 px-6">emma@sinksrus.com</td>
+                        <td class="py-3 px-6">555-1111</td>
+                        <td class="py-3 px-6">n/a</td>
+                        <td class="py-3 px-6">Female</td>
+                        <td class="py-3 px-6">Married</td>
+                    </tr>
+                </tbody>
+
+            </table>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
 </body>
 </html>
